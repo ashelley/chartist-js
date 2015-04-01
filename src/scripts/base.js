@@ -57,7 +57,7 @@
    * @memberof Chartist.Base
    */
   function detach() {
-    window.removeEventListener('resize', this.resizeListener);
+    //window.removeEventListener('resize', this.resizeListener);
     this.optionsProvider.removeMediaQueryListeners();
     return this;
   }
@@ -88,7 +88,7 @@
 
   function initialize() {
     // Add window resize listener that re-creates the chart
-    window.addEventListener('resize', this.resizeListener);
+    //window.addEventListener('resize', this.resizeListener);
 
     // Obtain current options based on matching media queries (if responsive options are given)
     // This will also register a listener that is re-creating the chart based on media changes
